@@ -16,7 +16,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function AuthClassicLayout({ children, image, title }: Props) {
+export default function AuthLayout({ children, image, title }: Props) {
   const theme = useTheme();
 
   const upMd = useResponsive('up', 'md');

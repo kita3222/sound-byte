@@ -23,7 +23,7 @@ export default function NavMini() {
         flexShrink: { lg: 0 },
         width: { lg: NAV.W_MINI },
       }}
-    >
+    >zF
       <NavToggleButton
         sx={{
           top: 22,

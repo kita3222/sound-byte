@@ -3,7 +3,7 @@
 // auth
 import { AuthGuard } from 'src/auth/guard';
 // components
-import DashboardLayout from 'src/layouts/dashboard';
+import AppLayout from 'src/layouts/app';
 
 // ----------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <AuthGuard>
-      <DashboardLayout>{children}</DashboardLayout>
+      <AppLayout>{children}</AppLayout>
     </AuthGuard>
   );
 }

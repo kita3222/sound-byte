@@ -3,7 +3,7 @@
 // auth
 import { GuestGuard } from 'src/auth/guard';
 // components
-import AuthClassicLayout from 'src/layouts/auth/classic';
+import AuthLayout from 'src/layouts/auth/layout';
 
 // ----------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <GuestGuard>
-      <AuthClassicLayout>{children}</AuthClassicLayout>
+      <AuthLayout>{children}</AuthLayout>
     </GuestGuard>
   );
 }

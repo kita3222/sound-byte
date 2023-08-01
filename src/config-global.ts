@@ -11,4 +11,4 @@ export const AMPLIFY_API = {
 };
 
 // ROOT PATH AFTER LOGIN SUCCESSFUL
-export const PATH_AFTER_LOGIN = paths.list; // as '/dashboard'
+export const PATH_AFTER_LOGIN = paths.list;
