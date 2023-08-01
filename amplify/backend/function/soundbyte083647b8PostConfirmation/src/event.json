@@ -1,6 +1,6 @@
 {
   "request": {
-    "userPoolId": "testID",
+    "userPoolId": "test",
     "userName": "testUser"
   },
   "response": {}

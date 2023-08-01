@@ -1,13 +1,9 @@
-/* Amplify Params - DO NOT EDIT
-	API_SOUNDBYTE_GRAPHQLAPIENDPOINTOUTPUT
-	API_SOUNDBYTE_GRAPHQLAPIIDOUTPUT
-	ENV
-	REGION
-Amplify Params - DO NOT EDIT */ /**
- *
- * This CloudFormation Trigger creates a handler which awaits the other handlers
- * specified in the `MODULES` env var, located at `./${MODULE}`.
+/**
+ * A Lambda function that adds a user to the SoundByte database when they sign up.
+ * 
+ * @param {Object} event - Lambda Event
  */
+
 require('isomorphic-fetch');
 const gql = require('graphql-tag');
 const AWSAppSyncClient = require('aws-appsync').default;
