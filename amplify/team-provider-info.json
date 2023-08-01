@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-soundbyte-dev-235845-authRole",
+      "UnauthRoleArn": "arn:aws:iam::107417626077:role/amplify-soundbyte-dev-235845-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::107417626077:role/amplify-soundbyte-dev-235845-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-soundbyte-dev-235845-deployment",
+      "UnauthRoleName": "amplify-soundbyte-dev-235845-unauthRole",
+      "StackName": "amplify-soundbyte-dev-235845",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:107417626077:stack/amplify-soundbyte-dev-235845/c389e590-2644-11ee-ae6b-0a2982016439",
+      "AmplifyAppId": "d32v5h0b4kccti",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-soundbyte-dev-235845-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "soundbyte083647b8": {}
+      },
+      "api": {
+        "soundbyte": {}
+      },
+      "predictions": {
+        "textToGenerateSpeech": {}
+      },
+      "storage": {
+        "soundByte": {}
+      },
+      "function": {
+        "generateSummaryAudio": {},
+        "soundbyte083647b8PostConfirmation": {
+          "deploymentBucketName": "amplify-soundbyte-dev-235845-deployment",
+          "s3Key": "amplify-builds/soundbyte083647b8PostConfirmation-39555663677656696473-build.zip"
+        }
+      }
+    }
+  }
+}

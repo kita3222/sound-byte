@@ -1,0 +1,13 @@
+{
+  "resourceName": "soundByte",
+  "policyUUID": "0bf66f64",
+  "bucketName": "soundbyte317c5f08347341aa84ede1a663694eaa",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

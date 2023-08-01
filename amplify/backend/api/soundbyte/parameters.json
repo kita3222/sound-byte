@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "soundbyte",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authsoundbyte083647b8",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2023-07-31T14:13:05.821Z"
+}

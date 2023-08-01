@@ -1,0 +1,31 @@
+type User
+  @model
+  @auth(rules: [{ allow: private, provider: userPools }, { allow: private, provider: iam }]) {
+  id: ID!
+  email: String!
+  articles: [Article] @hasMany
+}
+
+type Article @model @auth(rules: [{ allow: private, provider: userPools }]) {
+  id: ID!
+  title: String!
+  content: String!
+  sourceUrl: String!
+  speechUrl: String!
+  userId: ID! @index(name: "byUserId", queryField: "articlesByUserId")
+  user: User! @hasOne(fields: ["userId"])
+}
+
+type GenerateSummaryTextResponse {
+  title: String!
+  summaryText: String!
+}
+
+type Query {
+  generateSummaryTextQuery(url: String!): GenerateSummaryTextResponse!
+    @auth(rules: [{ allow: private, provider: userPools }])
+    @function(name: "generateSummaryText")
+  textToGenerateSpeech: String
+    @auth(rules: [{ allow: private, provider: userPools }])
+    @predictions(actions: [convertTextToSpeech])
+}
