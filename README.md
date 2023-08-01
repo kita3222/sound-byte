@@ -4,7 +4,7 @@ Sound Byte is an app that provides summaries and audio output of articles from t
 ## DEMO
 Sign in to the app.
 
-- Username: soundbyteamplify+2@gmail.com
+- Username: soundbyteamplify@gmail.com
 - Password: amplify@12345
 
 ## Tech Stack
